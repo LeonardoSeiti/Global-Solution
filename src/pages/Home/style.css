@@ -21,6 +21,12 @@
     font-family: 'Noto Sans', sans-serif;
     color: var(--text-color-E5E5E5);
 }
+
+.agrisust1{
+    width: 100%;
+    max-width: 400px;
+}
+
 #imagemIA{
     width: 100%;
     max-width: 400px;
