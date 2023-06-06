@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: rgba(53, 54, 58, 1);
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+}
+main {
+    width: 100%;
+    height: calc(100vh - 60px);
+
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+
+    /*
+        background url serve para url links ou file.png 
+        backgroun-repeat: permite a repetição ou não da imagem varias vezes
+        background-size: é o atributo para mostrar o tamanho da imagem
+        cover: para que a imagem seja calculada para toda a viewPort e que não perca qualidade
+
+        background: url(../../assets/images/contato-agricultores.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    */
+}
+.imagemAgricultores{
+    width: 60%;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
