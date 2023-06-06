@@ -6,35 +6,38 @@ body{
 
 h2{
     font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 48px;
 }
-h4{
+h3{
     font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 48px;
 }
 main {
-    width: 100%;
-    height: calc(100vh - 60px);
-
-    font-family: 'Poppins', sans-serif;
-
     display: flex;
-
-    /*
-        background url serve para url links ou file.png 
-        backgroun-repeat: permite a repetição ou não da imagem varias vezes
-        background-size: é o atributo para mostrar o tamanho da imagem
-        cover: para que a imagem seja calculada para toda a viewPort e que não perca qualidade
-
-        background: url(../../assets/images/contato-agricultores.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-    */
+    flex-direction: row;
 }
 .imagemAgricultores{
-    width: 60%;
+    position: relative;
+    left: 200px;
+    width: 70%;
+    z-index: -1;
+
+}
+form{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    left: 50px;
+
 }
 
-div {
-    display: flex;
-    flex-direction: column;
-    align-items: self-start;
+.botao{
+    width: 181px;
+    height: 50px;
+    background-color: #037DEF;
+    border-radius: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
 }
