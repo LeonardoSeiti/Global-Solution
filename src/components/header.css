@@ -87,6 +87,7 @@ header > section > nav > ul > li::after {
     background: var(--text-color-E5E5E5);
     display: block;
     transition: .4s ease-in-out;
+    z-index: 999;
 }
 
 header > section > nav > ul > li:hover::after {

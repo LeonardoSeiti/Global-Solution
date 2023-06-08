@@ -8,9 +8,12 @@
     --text-size-16: 1.6rem;
     --text-size-22: 2.2rem;
 
-    --background-button-0085FF: rgba(0, 133, 255, 1);
+    --background-button-0085FF: rgba(0, 133, 255);
+    --background-button-0085FF-01: rgba(0, 133, 255, 0.1);
     --background-button-037DEF: #037def;
 
+    --border-color-35363A: rgba(53, 54, 58, 1);
+    
     --background-color-35363A: rgba(53, 54, 58, 1);
 
     font-size: 62.5%;
@@ -24,6 +27,7 @@
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
     color: var(--text-color-35363A);
+    fill: var(--background-color-35363A);
 }
 
 body {
@@ -34,31 +38,374 @@ footer {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+    border-top: 1px solid var(--border-color-35363A);
 }
 
 footer > div:nth-child(1) {
     width: 100%;
-    height: auto;
 }
 
 footer > div:nth-child(1) > div {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-footer > div:nth-child(1) > div > section:nth-child(2) {
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+footer > div:nth-child(1) > div > section:nth-child(1) {
+    width: 20%;
+    height: 200px;
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(1) > section:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(1) > h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(2) > h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(2) > p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > a {
+    width: 180px;
+    height: 45px;
+
+    border: 1px solid var(--background-button-037DEF);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6rem;
+    text-transform: uppercase;
+
+}
+
+footer > div:nth-child(1) > div > section:nth-child(1) > a:hover {
+    background: var(--background-button-0085FF-01);
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) > article {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) > article > h2 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 65px;
+}
+
 footer > div:nth-child(1) > div > section:nth-child(2) > article > section {
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: left;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) > article > section > a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 22px;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) > article:nth-child(1) > section {
+    height: 60%;
+    margin-bottom: 32px;
+}
+
+footer > div:nth-child(1) > div > section:nth-child(2) > article:nth-child(3) > section {
+    height: 50%;
+    margin-bottom: 60px;
+}
+
+footer > div:nth-child(2) {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div:nth-child(2) > section {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer > div:nth-child(2) > section > div:nth-child(1) {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+footer > div:nth-child(2) > section > div:nth-child(1) > p {
+    font-size: var(--text-size-12);
+    font-weight: 500;
+}
+
+footer > div:nth-child(2) > section > div:nth-child(1) > a {
+    font-size: var(--text-size-12);
+    font-weight: 500;
+}
+
+footer > div:nth-child(2) > section > div:nth-child(2) {
+    width: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1300px) {
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 1115px) {
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    footer {
+        height: 700px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer > div:nth-child(1) {
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    footer > div:nth-child(2) {
+        height: 10%;
+    }
+
+    footer > div:nth-child(1) > div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    
+    footer > div:nth-child(1) > div > section:nth-child(1) {
+        height: 300px;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: 50px;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) {
+        width: 100%;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) > article {
+        height: 80%;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) > article:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    footer > div:nth-child(1) > div > section:nth-child(2) > article:nth-child(3) {
+        display: flex;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    footer > div:nth-child(1) > div > section:nth-child(2) {
+        padding: 0px 50px;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2){
+        flex-wrap: wrap;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) > article {
+        height: 80%;
+    }
+
+    footer > div:nth-child(2) {
+        height: 15%;
+    }
+
+    footer > div:nth-child(2) > section {
+        height: 80%;
+        display: flex;
+        align-items: start;
+        justify-content: space-evenly;
+        flex-flow: column-reverse wrap;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 40%;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 55%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    footer > div:nth-child(1) > div > section:nth-child(2) {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(1) > h1 {
+        font-size: 3.2rem;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(1) > div:nth-child(2) > h3 {
+        
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(1) > a {
+        width: 150px;
+        height: 40px;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 696px) {
+    footer {
+        height: 870px;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) > article {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    footer {
+        height: 870px;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 45%;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 65%;
+    }
+
+    footer > div:nth-child(2) {
+        height: 20%;
+    }
+}
+
+@media only screen and (max-width: 531px) {
+
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 50%;
+    }
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer {
+        height: 1100px;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) {
+        height: 65%;
+    }
+
+    footer > div:nth-child(1) > div > section:nth-child(2) > article {
+        height: 33%;
+    }
+
+    footer > div:nth-child(2) {
+        height: 30%;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 60%;
+    }
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 401px) {
+    footer {
+        height: 1130px;
+    }
+
+    footer > div:nth-child(2) > section > div:nth-child(2) {
+        width: 80%;
+    }
+    footer > div:nth-child(2) > section > div:nth-child(1) {
+        width: 95%;
+    }
 }
